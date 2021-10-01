@@ -10,10 +10,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.pageBackground {
-    background: rgba(17, 24, 39, 0.8);
-}
-
 @keyframes UpDown {
     from {
         transform: rotate(0deg) translateY(0);

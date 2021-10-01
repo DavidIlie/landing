@@ -1,6 +1,5 @@
 import { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
-import { ThemeProvider } from "next-themes";
 
 import AppLayout from "../components/AppLayout";
 
@@ -20,11 +19,9 @@ const LandingPage = ({ Component, pageProps }: AppProps) => {
                 }}
                 description="Landing page used for unused domains."
             />
-            <ThemeProvider defaultTheme="dark">
-                <AppLayout>
-                    <Component {...pageProps} />
-                </AppLayout>
-            </ThemeProvider>
+            <AppLayout>
+                <Component {...pageProps} />
+            </AppLayout>
         </>
     );
 };

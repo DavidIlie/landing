@@ -51,14 +51,16 @@ type SVGProps = {
 };
 
 const GetColor = () => {
-    return [`200`, `300`, `400`, `500`, `600`];
+    return [`300`, `400`, `500`, `600`];
 };
 
 export const SVG = ({
     stroke = false,
     color = `${
-        [`indigo`, `blue`, `green`, `purple`][Math.floor(Math.random() * 4)]
-    }-${GetColor()[Math.floor(Math.random() * 5)]}`,
+        [`indigo`, `blue`, `green`, `purple`, `gray`, `red`][
+            Math.floor(Math.random() * 6)
+        ]
+    }-${GetColor()[Math.floor(Math.random() * 4)]}`,
     zIndex = -500,
     width,
     icon,

@@ -35,15 +35,9 @@ const AppLayout = ({ children }: LayoutProps): JSX.Element => {
                     top="70%"
                 />
                 <SVG icon="circle" width={6} left="4%" top="20%" />
-                <SVG
-                    icon="circle"
-                    width={12}
-                    left="50%"
-                    top="60%"
-                    color="gray.100"
-                />
+                <SVG icon="circle" width={12} left="50%" top="60%" />
             </UpDown>
-            <div className="flex flex-col justify-between min-h-screen text-white pageBackground backdrop-filter backdrop-blur-lg">
+            <div className="flex flex-col justify-between min-h-screen text-white backdrop-filter backdrop-blur-lg">
                 {children}
             </div>
         </>
