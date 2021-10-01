@@ -8,7 +8,7 @@ import "tailwindcss/tailwind.css";
 
 const LandingPage = ({ Component, pageProps }: AppProps) => {
     return (
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider defaultTheme="dark">
             <AppLayout>
                 <Component {...pageProps} />
             </AppLayout>
