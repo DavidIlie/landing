@@ -20,8 +20,8 @@ jobs:
                   password: ${{ secrets.GHCR_PASSWORD }}
             - name: Build and publish Docker image
               run: |
-                  docker build -t ghcr.io/davidilie/landing:latest .
-                  docker push ghcr.io/davidilie/landing:latest:latest
+                  docker build -t ghcr.io/davidilie/platform-landing:latest .
+                  docker push ghcr.io/davidilie/platform-landing:latest
     deploy_self:
         name: "Deploy"
         runs-on: ubuntu-latest
