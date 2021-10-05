@@ -28,7 +28,7 @@ const Home = (): JSX.Element => {
                     >
                         Privacy Policy
                     </a>
-                    ,{" "}
+                    {" - "}
                     <a
                         href="/terms-of-service.html"
                         className="text-blue-500 hover:text-blue-600 duration-150"
